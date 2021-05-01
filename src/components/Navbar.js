@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
-import { BookContext } from "../contexts/BookContext";
+import { ContactContext } from "../contexts/ContactContext";
+import "../index.css";
 
 const Navbar = () => {
-  const { books } = useContext(BookContext);
+  const { contacts } = useContext(ContactContext);
   return (
     <div className="navbar">
-      <h1>Minha lista de leitura</h1>
-      <p>Atualmente você tem {books.length} livro(s) para ler...</p>
+      <h1>Minha lista de contatos</h1>
+      <p>Atualmente você tem {contacts.length} contato(s) armazenado(s)..</p>
     </div>
   );
 };
